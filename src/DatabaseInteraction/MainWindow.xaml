@@ -1,0 +1,13 @@
+﻿<metro:MetroWindow x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseInteraction"
+        mc:Ignorable="d"
+        Title="Database Interaction 101" Height="600" Width="1200" Loaded="MetroWindow_Loaded" MaxHeight="600" MaxWidth="1200">
+    <Grid x:Name="mainwindowGrid">
+
+    </Grid>
+</metro:MetroWindow>

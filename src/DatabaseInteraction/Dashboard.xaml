@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DatabaseInteraction"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="300*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="menuStackPanel">
+            <TextBlock x:Name="isConnected" Margin="0,10" FontFamily="Roboto" FontSize="20" Foreground="Green" TextAlignment="Center">Connected</TextBlock>
+            <Button x:Name="searchForStudentButton" Margin="10">Search for a student</Button>
+            <Button x:Name="addStudentButton" Margin="10">Add a student</Button>
+            <Button x:Name="searchForClassButon" Margin="10">Search for a class</Button>
+            <Button x:Name="addClassButton" Margin="10">Add a class</Button>
+            <Button x:Name="enrollStudentMenu" Margin="10">Enrol a student</Button>
+        </StackPanel>
+        <StackPanel x:Name="mainStackPanel">
+            <Grid x:Name="mainGrid" Height="Auto">
+                
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

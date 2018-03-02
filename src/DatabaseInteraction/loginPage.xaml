@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="loginPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DatabaseInteraction"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1200" KeyDown="UserControl_KeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="445*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock Margin="10,200,10,10" FontFamily="Roboto" FontSize="30">Username</TextBlock>
+            <TextBlock Margin="10,10,10,10" FontFamily="Roboto" FontSize="30">Password</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox x:Name="usernameTextbox" Margin="10,200,10,10" FontFamily="Roboto" FontSize="30" Foreground="#DE7AFF"></TextBox>
+            <!--<TextBox x:Name="passwordTextbox" Margin="10" FontFamily="Roboto" FontSize="30" Foreground="#DE7AFF"></TextBox>-->
+            <PasswordBox x:Name="passwordTextbox" Margin="10" FontFamily="Roboto" FontSize="30" Foreground="#DE7AFF"></PasswordBox>
+            <Button x:Name="loginButton" Margin="10" FontFamily="Roboto" FontSize="30" Height="Auto">LOGIN</Button>
+            <metro:ProgressRing x:Name="loginProgressRing" Height="100" Width="100" Visibility="Hidden">
+                
+            </metro:ProgressRing>
+        </StackPanel>
+    </Grid>
+</UserControl>
