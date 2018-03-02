@@ -6,3 +6,5 @@ Local SQL Database used : [SqlYog](https://www.webyog.com/product/sqlyog)
  Allows for the interaction and execution of SQL commands using `System.Data.Odbc`'s namespace, database, table, field names are of course dependent on your database, so make sure to change them before attempting to use it.
 
 UI is made in WPF using [MahApps](mahapps.com) and [Material Design in XAML](http://materialdesigninxaml.net/) 
+
+![Login Demo](https://github.com/peaches6/ODBC-in-.NET/blob/master/media/loginDemo.PNG?raw=true)
