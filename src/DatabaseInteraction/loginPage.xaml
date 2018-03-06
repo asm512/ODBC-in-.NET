@@ -24,6 +24,7 @@
             <metro:ProgressRing x:Name="loginProgressRing" Height="100" Width="100" Visibility="Hidden">
                 
             </metro:ProgressRing>
+            <TextBlock x:Name="userErrorDisplay" FontFamily="Roboto" FontSize="20" TextWrapping="Wrap" Margin="10"> </TextBlock>
         </StackPanel>
     </Grid>
 </UserControl>

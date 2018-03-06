@@ -29,15 +29,14 @@ Public Class LoginPage
         Try
             conn.Open()
             rs = sql.ExecuteReader
-        Catch
-            'Temporary notification
-            MessageBox.Show("err")
+        Catch ex As Exception
+            DisplayError(ex.Message)
             Return
         End Try
         If rs.Read() Then
             loginSuccess = True
         Else
-            'Display error somewhere
+            DisplayError("Could not login, please check username and password")
             loginSuccess = False
         End If
         conn.Close()
@@ -46,6 +45,12 @@ Public Class LoginPage
         loginProgressRing.Visibility = Visibility.Hidden
         'Invoke the method in the MainWindow instance
         MainWindow.loggedIn = loginSuccess
+    End Sub
+
+    Private Sub DisplayError(err As Object)
+        Dispatcher.Invoke(Sub()
+                              userErrorDisplay.Text = err.ToString()
+                          End Sub)
     End Sub
 
 End Class
